@@ -1,3 +1,15 @@
 <h1>Songs#show</h1>
 
 Title: <%= @song.title %>
+<div>
+Artist: <%= @song.artist_name %>
+</div>
+<div>
+Genre: <%= @song.genre_name %>
+</div>
+<div>
+Notes:
+<% @song.note_contents.each do |note| %>
+  <%= note %>
+<% end %>
+</div>
